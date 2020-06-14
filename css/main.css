@@ -1,0 +1,508 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/*
+*****************************************************************************
+Common Styles
+******************************************************************************/
+body{
+    font-family: 'Open Sans';
+}
+
+.container{
+    width: 100%;
+    margin: 0px auto;
+}
+
+/*
+*****************************************************************************
+Header styles
+******************************************************************************/
+.site-header{
+    padding: 10px;
+}
+.site-header:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.logo{
+    float: left;
+}
+.logo img{
+    width: 120px;
+    height: auto;
+}
+.logo_bar{
+    padding: 0px 37px;
+}
+/***************************** Menu Icon *****************************************/
+.menu{
+    float: right;
+    position: relative;
+}
+.menu_icon {
+    display: inline-block;
+    cursor: pointer;
+}
+.menu p{
+    position: absolute;
+    right: 50px;
+    top: 0px;
+}  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/***************************** Nav Bar *****************************************/
+.top-links{
+    /*float: right;*/
+    line-height: 2.5;
+    display: none;
+}
+.top-links ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.top-links ul li{
+    /*display: inline-block;*/
+    margin-right: 15px;
+    width: 100%;
+    padding-left: 50px;
+}
+.active {
+    color: #fff;
+    background-color:#4CAF50 ;
+}
+
+.top-links ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.top-links ul li a:hover{
+    color: #fff;
+}
+.top-links ul li:hover{
+    background-color: #333;
+}
+
+
+/*********************************************************************************
+Banner Styles
+*********************************************************************************/
+.banner{
+    clear: both;
+  }
+.banner figure{
+margin: 0px;
+}
+.banner figure img{
+width: 100%;
+height: 300px;
+background-color: #999;
+}
+.banner_top{
+    background-color: #CCCCCC;
+    height: 350px;
+}
+.top_button{
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+}
+.top_button button{
+    border: none;
+    line-height: 2.5em;
+    background-color: white;
+}
+.banner_content p{
+    text-align: center;
+    color: #fff;
+    margin: 15px 0px;
+}
+.banner_content{
+    padding: 120px 0px;
+}
+.uppercase{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.banner_middle{
+    position: relative;
+}
+.banner_middle_content{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+.bottom_button{
+    font-size: 9px;
+    line-height: 20px;
+}
+.bottom_button button{
+    border: none;
+    text-transform: uppercase;
+    line-height: 2em;
+    background-color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+/***********************************************************************************
+Middle Section
+***********************************************************************************/
+.middle-section{
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.middle_box:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.middle_box{
+    margin: 20px 100px;
+    width: 80%;
+    padding-left: 90px;
+}
+.middle_title{
+    text-align: center;
+    margin: 30px;
+}
+.middle_title h2{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.middle_title h4{
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(247, 176, 247);
+}
+.box p{
+    color: rgb(247, 176, 247);
+}
+.box{
+    width: 37%;
+    height:150px;
+    margin: 0px 15px;
+}
+.box1{
+    float: left;
+}
+.box2{
+    float: left;
+}
+.service_content_left{
+    width: 60%;
+    float: left;
+    font-size: 10px;
+    padding: 5px;
+}
+.service_content_left h3{
+    font-weight: bold;
+    text-align: right;
+}
+.service_image_left{
+    float: right;
+    margin: 30px 0px;
+}
+.service_image_left img{
+    width: 80px;
+    height: 80px;
+}
+.service_content_right{
+    width: 60%;
+    float: right;
+    font-size: 10px;
+    padding: 5px;
+}
+.service_content_right h3{
+    font-weight: bold;
+    text-align: left;
+}
+.service_image_right{
+    float: left;
+    margin: 30px 0px;
+}
+.service_image_right img{
+    width: 80px;
+    height: 80px;
+}
+/**************************************************************************************
+Bottom Section
+**************************************************************************************/
+.bottom-section:after{
+   content: "";
+   display: table;
+   clear: both;
+}
+.bottom-box{
+    width: 100%;
+    height: 600px;
+}
+.box3{
+    float: left;
+    background-image: url(../img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.events{
+    width: 70%;
+    margin: 40px auto;
+}
+.events::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.event-box img{
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+.event-content{
+    margin-left: 50px;
+}
+.event-content h3{
+    font-weight:bolder;
+    font-size: 15px;
+}
+.event-content p{
+    font-size: 10px;
+    font-style: italic;
+    font-style: italic;
+    color: rgb(125, 125, 126);
+}
+.event-content button{
+    font-size: 10px;
+    line-height: 20px;
+    border: none;
+    background-color: tan;
+    color: white;
+}
+.events h2{
+    text-transform: uppercase;
+}
+.event-box{
+    margin-bottom: 25px;
+}
+.blogs{
+    padding: 80px 0px 40px;
+    background-color: #f1f1f1;
+}
+.blogs h2,h4{
+    text-align: center;
+}
+.blogs h2{
+    text-transform: uppercase;
+}
+.blogs h4{
+    font-style: italic;
+    font-size: 11px;
+    color: #999;
+}
+.blog-box{
+    float: left;
+    width: 30%;
+}
+.blog-box img{
+width: 230px;
+}
+.blogs::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-blog{
+    width: 80%;
+    margin: 0px auto;
+    padding-left: 110px;
+}
+.blog-left{
+    width: 30%;
+    height: 180px;
+    float: left;
+    padding: 0px 10px;
+    background-color: #f4e7f5;
+    color: peru;
+}
+.blog-left h3,p{
+    margin: 5px 0px;
+}
+.blog-left::after{
+    clear: both;
+}
+.blog-right{
+    width: 95%;
+    font-size: 10px;
+    padding-left: 20px;
+}
+/**************************************************************************************
+Footer style
+**************************************************************************************/
+footer{
+    background-color: black;
+    height: 300px;
+    padding-top: 20px;
+}
+footer h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.buttonInside{
+    text-align: center;
+    position: relative;
+}
+.buttonInside  button,input{
+    font-size: 10px;
+    line-height: 35px;
+}
+.buttonInside input{
+    width: 250px;
+}
+.buttonInside button{
+    color: white;
+    background-color: peru;
+    border: none;
+    padding: 3px 10px;
+    position: absolute;
+    left: 600px;
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    margin: 25px 0px;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
